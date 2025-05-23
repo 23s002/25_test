@@ -32,12 +32,12 @@ with st.container():
 
 # 한 마디
 st.subheader("💬 한 마디")
-st.success("기술로 세상을 더 나은 방향으로 바꾸고 싶습니다!")
+st.success("안녕하세요")
 
 # 연락 버튼
 st.subheader("📨 연락하기")
 if st.button("이메일 보내기"):
-    st.markdown("📧 이메일: [honggildong@example.com](mailto:honggildong@example.com)")
+    st.markdown("📧 이메일: [23s002@ydi.hs.kr](23s002@ydi.hs.kr)")
 
 # 푸터
 st.markdown("---")

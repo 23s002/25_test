@@ -1,42 +1,44 @@
 import streamlit as st
 
-# 페이지 기본 설정
+# 페이지 설정
 st.set_page_config(
     page_title="나의 소개 페이지",
     page_icon="👤",
     layout="centered"
 )
 
-# 사이드바 타이틀
+# 사이드바
 st.sidebar.title("📌 Navigation")
-st.sidebar.markdown("현재 페이지: 소개")
+st.sidebar.markdown("현재 위치: 소개 페이지")
 
-# 메인 타이틀
-st.title("👋 안녕하세요!")
-st.markdown("아래는 저에 대한 간단한 소개입니다.")
+# 메인 제목
+st.title("👋 반갑습니다! 저는 홍길동입니다.")
 
-# 프로필 사진
-st.image("your_profile_image.jpg", width=200, caption="나의 사진")
+# 간단 소개
+st.markdown("""
+안녕하세요! 저는 **한국대학교 컴퓨터공학과**에 재학 중인 학생입니다.  
+다양한 기술을 배우고 사람들과 협업하는 걸 좋아합니다.
+""")
 
-# 소개 카드 스타일 박스
+# 정보 박스
 with st.container():
-    st.subheader("🙋‍♂️ 기본 정보")
+    st.subheader("🧾 기본 정보")
     st.write("""
     - **이름**: 홍길동  
     - **학교**: 한국대학교 컴퓨터공학과  
     - **취미**: 사진 찍기, 독서, 마라톤  
-    - **이메일**: honggildong@example.com
+    - **이메일**: honggildong@example.com  
     """)
 
-# 추가 소개
+# 한 마디
 st.subheader("💬 한 마디")
-st.info("세상에 긍정적인 영향을 주는 개발자가 되는 것이 제 목표입니다!")
+st.success("기술로 세상을 더 나은 방향으로 바꾸고 싶습니다!")
 
 # 연락 버튼
 st.subheader("📨 연락하기")
 if st.button("이메일 보내기"):
-    st.markdown("mailto:honggildong@example.com")
+    st.markdown("📧 이메일: [honggildong@example.com](mailto:honggildong@example.com)")
 
 # 푸터
 st.markdown("---")
-st.markdown("© 2025 홍길동. All rights reserved.")
+st.caption("© 2025 홍길동. All rights reserved.")
